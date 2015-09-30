@@ -15,7 +15,11 @@
   network,
   / rwkl,
   /** rwlkm,
-  /** pix,
+  # Ubuntu Core is a minimal system so don't use 'pix' here. There are few
+  # profiles to transition to, and those that exist either won't work right
+  # anyway (eg, ubuntu-core-launcher) or would need to be modified to work
+  # with snaps (dhclient).
+  /** ix,
 
   mount,
   remount,
