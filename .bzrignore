@@ -1,1 +1,3 @@
 *.snap
+go-example-webserver/magic-bin/arm-linux-gnueabihf/go-example-webserver
+go-example-webserver/magic-bin/x86_64-linux-gnu/go-example-webserver
