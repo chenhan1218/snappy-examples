@@ -1,5 +1,5 @@
 name: xkcd-webserver
-version: 0.5
+version: 0.6
 vendor: Snappy Developers <snappy-devel@lists.ubuntu.com>
 icon: meta/xkcd.png
 services:
@@ -7,5 +7,5 @@ services:
    start: bin/xkcd-webserver
    description: A fun webserver
    caps:
-   - networking
-   - network-service
+    - network-client
+    - network-service
