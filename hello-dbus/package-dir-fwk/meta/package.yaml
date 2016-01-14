@@ -1,5 +1,5 @@
 name: hello-dbus-fwk
-version: 1.0.2
+version: 2.0
 architectures:
   - amd64
   - armhf

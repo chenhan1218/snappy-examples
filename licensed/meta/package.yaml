@@ -1,6 +1,6 @@
 name: licensed
 icon: meta/icon.png
-version: 0.1
+version: 2.0
 vendor: John R. Lenton <john.lenton@canonical.com>
 binaries:
  - name: bin/printenv
