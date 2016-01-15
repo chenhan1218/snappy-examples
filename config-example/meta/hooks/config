@@ -5,7 +5,7 @@ import sys
 import yaml
 
 PKGNAME = "config-example"
-MSG_FILE = os.path.join(os.environ["SNAP_APP_DATA_PATH"], "message")
+MSG_FILE = os.path.join(os.environ["SNAP_DATA"], "message")
 
 
 def get_config():

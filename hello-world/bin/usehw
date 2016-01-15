@@ -6,7 +6,7 @@ echo "Hello hw-assign world!"
 echo "This example demonstrates the app confinement for assigned hardware"
 echo ""
 
-APPNAME=`echo $SNAP_APP_PATH | cut -f 3 -d '/'`
+APPNAME=`echo $SNAP | cut -f 3 -d '/'`
 if [ -z "$APPNAME" ]; then
     echo "Could not determine application name."
     exit 1

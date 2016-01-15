@@ -7,12 +7,12 @@ HELPER=$(dirname $0)/snappy-yaml-helper
 # read stdin with the "ypath" helper (if there is any input)
 CFG="$($HELPER /config/${SNAP_NAME}/msg 2>/dev/null || true)"
 if [ -n "$CFG" ]; then
-    printf "$CFG" > ${SNAP_APP_DATA_PATH}/message
+    printf "$CFG" > ${SNAP_DATA}/message
 fi
 
 # read existing message
-if [ -e "${SNAP_APP_DATA_PATH}/message" ]; then
-  msg=$(cat ${SNAP_APP_DATA_PATH}/message)
+if [ -e "${SNAP_DATA}/message" ]; then
+  msg=$(cat ${SNAP_DATA}/message)
 fi
 
 # output current config
