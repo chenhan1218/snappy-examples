@@ -1,0 +1,29 @@
+name: hello-world
+version: 3.0
+summary: Hello world example
+description: |
+ This is a simple hello world example.
+icon: meta/hello.png
+apps:
+ echo:
+  command: bin/echo
+  uses: [nothing]
+ env:
+  command: bin/env
+  uses: [nothing]
+ evil:
+  command: bin/evil
+  uses: [nothing]
+ showdev:
+  command: bin/showdev
+  uses: [nothing]
+ usehw:
+  command: bin/usehw
+  uses: [nothing]
+ sh:
+  command: bin/sh
+  uses: [nothing]
+uses:
+ nothing:
+  type: migration-skill
+  caps: []
