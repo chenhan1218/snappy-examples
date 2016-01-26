@@ -1,0 +1,21 @@
+name: hello-dbus-app
+version: 3.0
+architectures:
+  - amd64
+  - armhf
+  - i386
+summary: hello-dbus-app test client
+description: |
+ This is a simple dbus framework app example.
+frameworks:
+  - hello-dbus-fwk
+apps:
+ client:
+  command: bin/dbus_message.client
+  description: "hello-dbus-fwk test client"
+  uses: [client]
+uses:
+ client:
+  type: migration-skill
+  caps:
+   - hello-dbus-fwk_client

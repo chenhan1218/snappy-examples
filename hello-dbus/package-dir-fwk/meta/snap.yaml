@@ -1,0 +1,23 @@
+name: hello-dbus-fwk
+version: 3.0
+summary: hello-dbus-fwk test service and framework-policy
+description: |
+ This is a simple dbus framework example.
+architectures:
+  - amd64
+  - armhf
+  - i386
+type: framework
+apps:
+ srv:
+  command: bin/dbus_service.start
+  daemon: simple
+  description: "hello-dbus-fwk test service"
+  bus-name: "com.canonical.hello-dbus-fwk"
+  uses: [srv]
+uses:
+ srv:
+  type: migration-skill
+  security-policy:
+   apparmor: meta/svc.apparmor
+   seccomp: meta/svc.seccomp
