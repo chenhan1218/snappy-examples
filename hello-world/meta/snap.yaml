@@ -1,0 +1,25 @@
+name: hello-world
+version: 16.04-1
+summary: The hello-world of snappy apps
+architectures: [ all ]
+description: This is a simple hello world example that includes a
+  interesting apps to play with snappy and the sandboxing in snappy
+    hello-world.echo - simply output text
+    hello-world.env - dump the env of commands run inside app sandbox
+    hello-world.evil - show how snappy prevents apps to do stuff outside their sandbox
+    hello-world.showdev - depreated - will be replaced with skills
+    hello-world.usehw - depreated - will be replaced with skills example
+    hello-world.sh - enter interactive shell that runs in app sandbox
+apps:
+ echo:
+   command: bin/echo
+ env:
+   command: bin/env
+ evil:
+   command: bin/evil
+ showdev:
+   command: bin/showdev
+ usehw:
+   command: bin/usehw
+ sh:
+   command: bin/sh
