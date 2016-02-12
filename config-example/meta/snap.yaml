@@ -1,0 +1,20 @@
+name: config-example
+version: 3.0
+summary: Configuration example
+description: |
+ This is a simple example to how how to write a configure hook.
+ 
+ Run:
+ 
+   config-example.hello
+ 
+ for usage instructions.
+apps:
+ hello:
+  command: bin/hello
+  uses: [hello]
+uses:
+ hello:
+  type: migration-skill
+
+

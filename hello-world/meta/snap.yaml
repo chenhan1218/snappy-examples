@@ -1,7 +1,7 @@
 name: hello-world
 version: 16.04-1
-summary: The hello-world of snappy apps
 architectures: [ all ]
+summary: The hello-world of snappy apps
 description: This is a simple hello world example that includes a
   interesting apps to play with snappy and the sandboxing in snappy
     hello-world.echo - simply output text
