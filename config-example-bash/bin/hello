@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [ -e ${SNAP_APP_DATA_PATH}/message ]; then
-    cat ${SNAP_APP_DATA_PATH}/message
+if [ -e ${SNAP_DATA}/message ]; then
+    cat ${SNAP_DATA}/message
 else
     cat <<EOF2
 Hello from the bash config example!

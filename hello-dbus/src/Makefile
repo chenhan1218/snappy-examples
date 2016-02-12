@@ -4,7 +4,7 @@
 # make
 # make install
 
-# This should match SNAP_APP_ARCH
+# This should match SNAP_ARCH
 BUILD_ARCH := $(shell dpkg-architecture | grep DEB_BUILD_ARCH= | cut -f 2 -d '=')
 
 CFLAGS += -g -O0 -Wall -Wstrict-prototypes

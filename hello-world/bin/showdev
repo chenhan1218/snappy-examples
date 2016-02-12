@@ -10,7 +10,7 @@ echo "Hello /dev World: Here is what I can see with 'find $findargs'"
 
 find $findargs
 
-APPNAME=`echo $SNAP_APP_PATH | cut -f 3 -d '/'`
+APPNAME=`echo $SNAP | cut -f 3 -d '/'`
 echo ""
 echo "Here is hardware that has been assigned to me ($APPNAME):"
 udevadm trigger --verbose --dry-run --tag-match=snappy-assign --property-match=SNAPPY_APP="$APPNAME"
