@@ -1,5 +1,5 @@
 name: hello-dbus-app
-version: 3.0
+version: 16.04-2
 architectures:
   - amd64
   - armhf
@@ -13,9 +13,9 @@ apps:
  client:
   command: bin/dbus_message.client
   description: "hello-dbus-fwk test client"
-  uses: [client]
-uses:
+  plugs: [client]
+plugs:
  client:
-  type: migration-skill
+  interface: old-security
   caps:
    - hello-dbus-fwk_client

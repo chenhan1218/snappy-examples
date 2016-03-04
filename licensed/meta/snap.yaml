@@ -1,5 +1,5 @@
 name: licensed
-version: 3.0
+version: 16.04-2
 summary: Licensed example
 description: |
  This is a simple example with a license that needs accepting.
@@ -7,9 +7,9 @@ license-agreement: explicit
 apps:
  printenv:
   command: bin/printenv
-  uses: [printenv]
-uses:
+  plugs: [printenv]
+plugs:
  printenv:
-  type: migration-skill
+  interface: old-security
 
 
