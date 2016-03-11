@@ -1,5 +1,5 @@
 name: hello-dbus-fwk
-version: 3.0
+version: 16.04-2
 summary: hello-dbus-fwk test service and framework-policy
 description: |
  This is a simple dbus framework example.
@@ -14,10 +14,10 @@ apps:
   daemon: simple
   description: "hello-dbus-fwk test service"
   bus-name: "com.canonical.hello-dbus-fwk"
-  uses: [srv]
-uses:
+  plugs: [srv]
+plugs:
  srv:
-  type: migration-skill
+  interface: old-security
   security-policy:
    apparmor: meta/svc.apparmor
    seccomp: meta/svc.seccomp

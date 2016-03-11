@@ -1,5 +1,5 @@
 name: xkcd-webserver
-version: 3.0
+version: 16.04-2
 summary: Python based example webserver
 description: |
  Show random XKCD comic via a build-in webserver
@@ -9,10 +9,10 @@ apps:
   command: ./bin/xkcd-webserver
   daemon: simple
   description: A fun webserver
-  uses: [xkcd-webserver]
-uses:
+  plugs: [xkcd-webserver]
+plugs:
  xkcd-webserver:
-  type: migration-skill
+  interface: old-security
   caps:
    - network-client
    - network-service

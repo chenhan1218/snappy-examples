@@ -1,5 +1,5 @@
 name: config-example-bash
-version: 3.0
+version: 16.04-2
 summary: Configuration example
 description: |
  This is a simple example to how how to write a configure hook with bash.
@@ -12,8 +12,8 @@ description: |
 apps:
  hello:
   command: bin/hello
-  uses: [hello]
-uses:
+  plugs: [hello]
+plugs:
  hello:
-  type: migration-skill
+  interface: old-security
 
