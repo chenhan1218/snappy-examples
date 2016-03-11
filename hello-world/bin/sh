@@ -1,13 +1,6 @@
 #!/bin/bash
 
-cat <<EOM
-Launching a shell inside the default app confinement. Navigate to your
-app-specific directories with:
 
-  $ cd \$SNAP
-  $ cd \$SNAP_DATA
-  $ cd \$SNAP_USER_DATA
+echo "Launching a shell inside the default app confinement"
 
-EOM
-
-/bin/bash --norc -i
+/bin/sh
