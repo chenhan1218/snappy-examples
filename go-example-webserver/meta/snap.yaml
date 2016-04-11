@@ -1,5 +1,5 @@
 name: go-example-webserver
-version: 16.04-3
+version: 16.04-4
 summary: Minimal Golang webserver for snappy
 description: |
  Mostly a example to show how to build a binary webserver for snappy.
@@ -9,11 +9,5 @@ apps:
    command: ./magic-bin/go-example-webserver
    daemon: simple
    description: "snappy example: golang mini webserver"
-   plugs: [webserver]
-plugs:
- webserver:
-  interface: old-security
-  caps:
-   - network-client
-   - network-service
+   plugs: [network,network-bind]
   
