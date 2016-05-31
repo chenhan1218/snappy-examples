@@ -1,5 +1,5 @@
 name: hello-world
-version: 6.0
+version: 6.1
 architectures: [ all ]
 summary: The hello-world of snappy apps
 description: This is a simple hello world example that includes a
@@ -10,6 +10,7 @@ description: This is a simple hello world example that includes a
     hello-world.showdev - depreated - will be replaced with skills
     hello-world.usehw - depreated - will be replaced with skills example
     hello-world.sh - enter interactive shell that runs in app sandbox
+    hello-world - simply output text
 apps:
  echo:
    command: bin/echo
@@ -23,3 +24,5 @@ apps:
    command: bin/usehw
  sh:
    command: bin/sh
+ hello-world:
+   command: bin/echo
