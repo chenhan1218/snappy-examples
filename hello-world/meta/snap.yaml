@@ -1,5 +1,5 @@
 name: hello-world
-version: 6.1
+version: 6.2
 architectures: [ all ]
 summary: The hello-world of snappy apps
 description: This is a simple hello world example that includes a

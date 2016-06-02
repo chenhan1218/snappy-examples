@@ -1,5 +1,5 @@
 name: config-example
-version: 16.04-2
+version: 16.04-3
 summary: Configuration example
 description: |
  This is a simple example to how how to write a configure hook.
