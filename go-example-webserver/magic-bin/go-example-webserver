@@ -16,7 +16,7 @@ case $platform in
   x86_64)
     plat_abi=x86_64-linux-gnu
     ;;
-  386)
+  i686)
     plat_abi=i686-linux-gnu
     ;;
   armv7l)
