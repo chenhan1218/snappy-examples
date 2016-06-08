@@ -17,6 +17,10 @@ To build simply do this:
  3. cd ../arm-linux-gnueabihf
  4. GOARCH=arm go build ../../
 
+ # switch to the i386 directory and build for i386
+ 3. cd ../arm-linux-gnueabihf
+ 4. GOARCH=i386 go build ../../
+
  # go to top level dir and build the snapp
  5. cd ../..
  6. snappy build .
