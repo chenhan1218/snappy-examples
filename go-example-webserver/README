@@ -18,8 +18,12 @@ To build simply do this:
  4. GOARCH=arm go build ../../
 
  # switch to the i386 directory and build for i386
- 3. cd ../arm-linux-gnueabihf
- 4. GOARCH=i386 go build ../../
+ 3. cd ../i686-linux-gnu
+ 4. GOARCH=386 go build ../../
+
+ # switch to the arm64 directory and build for arm64
+ 3. cd ../aarch64-linux-gnu
+ 4. GOARCH=arm64 go build ../../
 
  # go to top level dir and build the snapp
  5. cd ../..

@@ -1,5 +1,5 @@
 name: go-example-webserver
-version: 16.04-6
+version: 16.04-7
 summary: Minimal Golang webserver for snappy
 description: |
  Mostly a example to show how to build a binary webserver for snappy.
